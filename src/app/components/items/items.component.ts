@@ -39,4 +39,8 @@ export class ItemsComponent implements OnInit {
     ]
   }
 
+  deleteItem(item: Item) {
+    this.items = this.items.filter(e => e.id != item.id);
+  }
+
 }
